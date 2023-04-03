@@ -27,10 +27,40 @@
             font-family: 'Trebuchet MS', sans-serif;
         }
 
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 2px;
+            padding-left: 2%;
+            padding-right: 2%;
+            color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #343434;
+            border-radius: 15px;
+        }
+
+        .logo {
+            color: rgb(255, 255, 255);
+            font-size: 38px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        span {
+            color: red;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
         nav ul li a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         /* Styles for hero section */
@@ -84,7 +114,7 @@
 
         .movie {
             background-color: #fff;
-            border-radius: 5px;
+            border-radius: 25px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: calc(25% - 20px);
             margin-bottom: 40px;
@@ -147,11 +177,11 @@
 <body>
     <header>
         <nav>
+            <h2 class="logo">Stream<span>Vision</span></h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Movies.html">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">My List</a></li>
+                <li><a href="#">Sign up</a></li>
             </ul>
         </nav>
     </header>
@@ -159,7 +189,7 @@
         <section class="hero">
             <h1>Welcome to StreamVision+</h1>
             <p>Stream your favorite movies and TV shows anytime, anywhere. Free for a limited time.</p>
-            <a href="movies.html"><button>Start Watching for FREE</button></a>
+            <a href="Movies.html"><button>Start Watching for FREE</button></a>
         </section>
         <section class="movies">
             <h2>Top Picks</h2>
@@ -172,9 +202,9 @@
                     <p>Year: 2022 | Rating: PG-13 | Duration: 130 min</p>
                 </div>
                 <div class="movie">
-                   <a href="https://ziddidil.com/taarak-mehta-ka-ooltah-chashmah-all-episode-video/">
-                    <img src="TM.jpg" alt="Movie Poster">
-                   </a>
+                    <a href="https://ziddidil.com/taarak-mehta-ka-ooltah-chashmah-all-episode-video/">
+                        <img src="TM.jpg" alt="Movie Poster">
+                    </a>
                     <h3>Taarak Mehta Ka Oolta Chashmah</h3>
                     <p>Year: Present | Duration: 20 min | 12 Seasons</p>
                 </div>
